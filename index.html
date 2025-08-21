@@ -120,16 +120,17 @@
         
         .hero-intro {
             font-size: 1.25rem;
-            color: #FFFFFF;
+            color: #FFFFFF; /* White text */
             margin: 0 auto;
-                font-weight: 700; /* make text bold */
-
+            font-weight: 700; /* Bold text */
         }
+        
         .hero-intro a {
             color: inherit; /* Changed: inherit white text color */
             text-decoration: underline; /* Keep underline for clarity in hero */
             text-decoration-thickness: 2px;
         }
+        
         .hero-intro a:hover {
             color: inherit; /* Changed: keep same color on hover */
             text-decoration-color: var(--secondary-color); /* Gold underline on hover */
@@ -333,6 +334,7 @@
             margin-top: 0;
             margin-bottom: 1rem;
         }
+        
         .cta-container h2 span { /* Highlight text */
             color: var(--secondary-color);
         }
@@ -366,14 +368,12 @@
             color: var(--white-bg);
         }
         
-        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .feature-grid {
                 grid-template-columns: 1fr; /* Stack to 1 column on smaller screens */
             }
         }
-
     </style>
 </head>
 <body>
@@ -526,13 +526,7 @@
             
             <div class="cta-container">
                 <h2>Start Every Project <span>on the Right Foot</span></h2>
-<p>
-  Success in construction begins long before breaking ground. With 
-  <a href="https://grayestimating.surge.sh" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; font-weight: inherit;">
-    Gray Estimating
-  </a>, 
-  you gain more than just numbers—you gain a dedicated partner committed to your project’s success.
-</p>
+                <p>Success in construction begins long before breaking ground. With Gray Estimating, you gain more than just numbers—you gain a dedicated partner committed to your project's success.</p>
                 <a class="cta-button" href="https://www.grayestimating.com/get-estimate/">Get Your Free Quote</a>
             </div>
             
