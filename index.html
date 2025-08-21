@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Why Professional Construction Estimating Services Are the Cornerstone of Project Success | Gray Estimating</title>
-    <meta name="description" content="Discover how accurate construction estimating drives profitable, on-schedule projects. See Gray Estimating’s full list of services and trade-specific estimating expertise." />
+    <meta name="description" content="Discover how accurate construction estimating drives profitable, on-schedule projects. See Gray Estimating's full list of services and trade-specific estimating expertise." />
     <link rel="canonical" href="https://www.grayestimating.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,14 +76,14 @@
         }
         
         a {
-            color: var(--primary-color);
-            text-decoration: none;
-            font-weight: 700;
+            color: inherit; /* Changed: inherit text color instead of primary blue */
+            text-decoration: none; /* Keep no underline */
+            font-weight: inherit; /* Changed: inherit weight instead of bold */
             transition: color 0.3s ease;
         }
 
         a:hover {
-            color: var(--secondary-color);
+            color: inherit; /* Changed: keep same color on hover */
             text-decoration: none;
         }
 
@@ -120,16 +120,19 @@
         
         .hero-intro {
             font-size: 1.25rem;
-            color: #EAEAEA;
+            color: #FFFFFF;
             margin: 0 auto;
+                font-weight: 700; /* make text bold */
+
         }
         .hero-intro a {
-            color: var(--secondary-color);
-            text-decoration: underline;
+            color: inherit; /* Changed: inherit white text color */
+            text-decoration: underline; /* Keep underline for clarity in hero */
             text-decoration-thickness: 2px;
         }
         .hero-intro a:hover {
-            color: #FFFFFF;
+            color: inherit; /* Changed: keep same color on hover */
+            text-decoration-color: var(--secondary-color); /* Gold underline on hover */
         }
         
         /* --- 📄 CONTENT SECTIONS & CARDS --- */
@@ -173,13 +176,13 @@
 
         .service-card a, .trade-card a {
             font-weight: 500;
-            color: var(--primary-color);
+            color: inherit; /* Changed: inherit text color */
             font-size: 1.1rem;
             text-decoration: none;
         }
 
         .service-card a:hover, .trade-card a:hover {
-            color: var(--heading-color);
+            color: inherit; /* Changed: keep same color on hover */
         }
 
         /* --- ✅ CHECKMARK LIST --- */
@@ -363,12 +366,14 @@
             color: var(--white-bg);
         }
         
+        
         /* Responsive adjustments */
         @media (max-width: 768px) {
             .feature-grid {
                 grid-template-columns: 1fr; /* Stack to 1 column on smaller screens */
             }
         }
+
     </style>
 </head>
 <body>
@@ -385,7 +390,7 @@
             
             <section id="why-accuracy-matters">
                 <h2 class="section-title">Your Blueprint for Profitability</h2>
-                <p>A professional estimate is far more than a simple cost sheet—it’s the strategic foundation for your project’s financial health. With meticulous, data-driven numbers, you gain the power to:</p>
+                <p>A professional estimate is far more than a simple cost sheet—it's the strategic foundation for your project's financial health. With meticulous, data-driven numbers, you gain the power to:</p>
                 <ul class="checkmark-list">
                     <li><strong>Submit Competitive Bids:</strong> Win more contracts with pricing that is both attractive and realistic.</li>
                     <li><strong>Prevent Costly Overruns:</strong> Eliminate surprises and protect your profit margins from day one.</li>
@@ -521,12 +526,17 @@
             
             <div class="cta-container">
                 <h2>Start Every Project <span>on the Right Foot</span></h2>
-                <p>Success in construction begins long before breaking ground. With Gray Estimating, you gain more than just numbers—you gain a dedicated partner committed to your project’s success.</p>
-                <a class="cta-button" href="https://www.grayestimating.com">Get Your Free Estimate</a>
+<p>
+  Success in construction begins long before breaking ground. With 
+  <a href="https://grayestimating.surge.sh" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; font-weight: inherit;">
+    Gray Estimating
+  </a>, 
+  you gain more than just numbers—you gain a dedicated partner committed to your project’s success.
+</p>
+                <a class="cta-button" href="https://www.grayestimating.com/get-estimate/">Get Your Free Quote</a>
             </div>
             
         </article>
     </main>
 </body>
 </html>
-
